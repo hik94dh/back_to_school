@@ -1,0 +1,203 @@
+-
+  var data =
+    [
+      {
+        "number": 1,
+        "id": 4295872,
+        "title": "Ранец ПИФАГОР жесткокаркасный для начальной школы для девочки",
+        "link": "http://www.ulmart.ru/goods/4295872",
+        "oldPrice": 2500,
+        "price": 990,
+        "promo": 60
+      },
+      {
+        "number": 2,
+        "id": 4296040,
+        "title": "Рюкзак ПИФАГОР для начальной школы для мальчика",
+        "link": "http://www.ulmart.ru/goods/4296040",
+        "oldPrice": 1750,
+        "price": 690,
+        "promo": 61
+      },
+      {
+        "number": 3,
+        "id": 4296388,
+        "title": "Limpopo Пенал с наполнением Единорог, 9 предметов",
+        "link": "http://www.ulmart.ru/goods/4296388",
+        "oldPrice": 500,
+        "price": 250,
+        "promo": 50
+      },
+      {
+        "number": 4,
+        "id": 4252492,
+        "title": "Набор для Школьника Правша",
+        "link": "http://www.ulmart.ru/goods/4252492",
+        "oldPrice": 890,
+        "price": 690,
+        "promo": 22
+      },
+      {
+        "number": 5,
+        "id": 3568456,
+        "title": "Ручка шариковая Brauberg \"Oil Sharp\", 0,5 мм, (12 шт)",
+        "link": "http://www.ulmart.ru/goods/3568456",
+        "oldPrice": "",
+        "price": 199,
+        "promo": ""
+      },
+      {
+        "number": 6,
+        "id": 4252491,
+        "title": "Набор для Школьника Правша",
+        "link": "http://www.ulmart.ru/goods/4252491",
+        "oldPrice": 600,
+        "price": 490,
+        "promo": 18
+      },
+      {
+        "number": 7,
+        "id": 4017529,
+        "title": "3D ручка Myriwell RP 800А c OLED дисплеем",
+        "link": "http://www.ulmart.ru/goods/4017529",
+        "oldPrice": 4200,
+        "price": 3400,
+        "promo": 19
+      },
+      {
+        "number": 8,
+        "id": 294993,
+        "title": "Электронный конструктор ЗНАТОК 180 схем",
+        "link": "http://www.ulmart.ru/goods/294993",
+        "oldPrice": 2350,
+        "price": 1690,
+        "promo": 28
+      },
+      {
+        "number": 9,
+        "id": 3977616,
+        "title": "Светильник настольный Camelion, 60Вт",
+        "link": "http://www.ulmart.ru/goods/3977616",
+        "oldPrice": "",
+        "price": 549,
+        "promo": ""
+      },
+      {
+        "number": 10,
+        "id": 4289439,
+        "title": "Водолазка Button Blue, р.158",
+        "link": "http://www.ulmart.ru/goods/4289439",
+        "oldPrice": "",
+        "price": 620,
+        "promo": ""
+      },
+      {
+        "number": 11,
+        "id": 4289502,
+        "title": "Рубашка Button Blue, р.152",
+        "link": "http://www.ulmart.ru/goods/4289502",
+        "oldPrice": "",
+        "price": 820,
+        "promo": ""
+      },
+      {
+        "number": 12,
+        "id": 4182381,
+        "title": "Кроссовки Patrol, р.35",
+        "link": "http://www.ulmart.ru/goods/4182381",
+        "oldPrice": 1575,
+        "price": 785,
+        "promo": 50
+      },
+      {
+        "number": 13,
+        "id": 4186615,
+        "title": "Кеды Monster High, р.36",
+        "link": "http://www.ulmart.ru/goods/4186615",
+        "oldPrice": 930,
+        "price": 465,
+        "promo": 50
+      }
+    ]
+
+
+mixin carousel(data)
+  .carousel__item
+    +a({"href":`${data.link}`})
+      img.carousel__item--img(src=`${URL + data.id + '.jpg'}`, width="188" alt="")
+    p.carousel__item--desc !{(data.title)}
+    .carousel__item--footer
+      .carousel__item--price--wrap
+        if data.oldPrice == ''
+          .carousel__item--oldPrice
+        else
+          .carousel__item--oldPrice !{(data.oldPrice)} руб.
+        .carousel__item--price !{(data.price)} руб.
+      +a({"href":`${data.link}`, "class":"carousel__item--btn"}) Купить
+    if data.promo !== ''
+      .carousel__item--sale Скидка 
+        span -!{(data.promo)}%
+
+//- //- Товары
+//- mixin goods(data)
+//-     .goods-wrapper
+//-         .goods-head
+//-             a(href=`${data.link}`, class="goods-head__link", target="_blank")
+//-                 img(src=`${URL + data.id + '.jpg'}`, alt="Товар", width=`${data.size || '220'}`, class="goods-head__img")
+//-         .goods-wrapper-name
+//-             .goods-head__name
+//-                 | !{(data.title)}
+//-         .goods-middle
+//-             .goods-middle__price
+//-                 .goods-middle__retail
+//-                     | !{getNumberFormat(data.oldPrice)}.-
+//-                 .goods-middle__start
+//-                     | !{getNumberFormat(data.price)}.-
+//-         a(href=`${data.link}`, class="goods-bottom__link") Купить
+
+//- //- Товары с промокодом и выгодой
+//- mixin goods-promocode(data)
+//-     .goods-wrapper.goods-wrapper-promocode
+//-         .goods-sale
+//-             | Выгода 
+//-             br
+//-             span !{getProfit(data.oldPrice, data.price)}.- 
+//-         .goods-head
+//-             a(href=`${data.link}`, class="goods-head__link",target="_blank")
+//-                 img(src=`${URL + data.id + '.jpg'}`, alt="Товар", class="goods-head__img")
+//-         .goods-wrapper-name
+//-             .goods-head__name
+//-                 | #{formatTitleAlter(data.title)}
+//-         .goods-promocode
+//-             | Промокод: 
+//-             span #{data.promocode}
+//-         .goods-middle
+//-             .goods-middle__price
+//-                 .goods-middle__retail
+//-                     | !{getNumberFormat(data.oldPrice)}.-
+//-                 .goods-middle__start
+//-                     | !{getNumberFormat(data.price)}.-
+//-         a(href=`${data.link}`, class="goods-bottom__link") Купить
+
+//- //- Товары для аукциона
+//- mixin goods-auction(data)
+//-     .goods-wrapper.goods-wrapper-auction
+//-         .goods-head
+//-             a(href=`${data.link}`, class="goods-head__link",target="_blank")
+//-                 img(src=`${URL + data.id + '.jpg'}`, alt="Товар", class="goods-head__img")
+//-         .goods-wrapper-name
+//-             .goods-head__name
+//-                 | !{(data.title)}
+//-         .goods-middle
+//-             .goods-middle__line
+//-                 .goods-middle__text
+//-                     | Розничная цена
+//-                 .goods-middle__retail-price
+//-                     | !{getNumberFormat(data.oldPrice)}.-
+//-                     //- | !{getProfit(data.oldPrice, data.price)}.-
+//-             .goods-middle__line
+//-                 .goods-middle__text
+//-                     | Стартовая цена
+//-                 .goods-middle__start-price
+//-                     | !{getNumberFormat(data.price)}.-
+//-         a(class="goods-bottom__link", href= `${data.link}`) О товаре

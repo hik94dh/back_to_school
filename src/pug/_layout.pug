@@ -1,0 +1,15 @@
+include helpers/_global_mixins
+include template/_project_mixins
+block vars
+
+
+doctype
+html(lang="ru")
+  head
+    include template/_head
+  body
+    block content
+
+  link(rel='stylesheet' type='text/css' href=`${SRC + 'css/style.css'}` media='screen, projection, print')
+  script(src=`${SRC + 'js/main.js'}`)
+
