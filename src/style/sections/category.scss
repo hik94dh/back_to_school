@@ -3,7 +3,7 @@
     margin-top: 5rem;
   }
   &__about {
-    margin-top: 1.9rem;
+    margin: 1.9rem auto 0;
   }
   &__title {
     color: #fff;
@@ -36,10 +36,9 @@
       cursor: pointer;
     }
     &--wrap {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap
     }
     &--title {
       color: #fff;
@@ -163,6 +162,9 @@
     max-width: 234px;
     color: #fff;
     margin: .7rem auto 0;
+    &:hover {
+      opacity: .8;
+    }
   }
   &__scroll {
     &--wrap {
@@ -185,4 +187,10 @@
       }
     }
   }
+}
+
+.category__card--cover {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }

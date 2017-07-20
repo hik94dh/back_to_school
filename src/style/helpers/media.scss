@@ -38,6 +38,15 @@
     -ms-animation: none !important;
     animation: none !important;
   }
+  .owl-theme .owl-dots .owl-dot span {
+    background-color: #ebebeb;
+  }
+  .owl-theme .owl-dots .owl-dot.active span {
+    background-color: #c2c2c2;
+  }
+  .category__card--cover {
+    flex-direction: row;
+  }
 
   .header {
     padding: 20px 5px;
@@ -62,20 +71,62 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+  .wrapper {
+    background: url(../img/bg-main-mobile.jpg) top center no-repeat;
+    background-size: contain;
+  }
   .subheader {
     &__text {
+      &--wrap {
+        background: none;
+      }
       &--title {
-      font-size: 1.9rem;
+        font-size: 1.9rem;
+        color: #fff;
+        padding-top: 14rem;
+      }
+      &--desc {
+        color: #fff;
+        font-size: .8rem;
+        margin-bottom: 2.2rem;
+        padding-top: .5rem;
       }
     }
-    &__btn {
-      margin-right: none;
-      margin: 0 auto;
+    &__btn--wrap {
+      display: none;
     }
   }
   .category {
+    &__wrap {
+      margin-top: .3rem;
+    }
     &__card {
       margin: 0 auto 1.5rem;
+      max-width: 270px;
+    }
+    &__title {
+      width: 261px;
+      margin:  0 auto;
+      padding-bottom: .7rem;
+      color: #333333;
+    }
+    &__desc {
+      margin: 0 auto;
+      color: #333333;
+    }
+    &__scroll--top {
+      position: initial;
+      display: block;
+      margin: 1rem auto 0;
+    }
+  }
+  .carousel {
+    &__wrap {
+      padding-top: 1rem;
+    }
+    &__title {
+      color: #fff;
+      padding: 0 .5rem;
     }
   }
 
@@ -83,6 +134,13 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+  .subheader {
+    &__text {
+      &--title {
+        padding-top: 10rem;
+      }
+    }
+  }
 
 }
 
