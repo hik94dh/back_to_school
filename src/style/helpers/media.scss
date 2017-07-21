@@ -46,6 +46,22 @@
   }
   .category__card--cover {
     flex-direction: row;
+    width: 100%;
+  }
+  .category__card--wrap {
+    max-width: 570px;
+    margin: 0 auto;
+  }
+  .category__card--7 {
+    flex-basis: 100%;
+  }
+  .category__card--9 {
+    flex-basis: 100%;
+    order: 3;
+  }
+
+  .carousel__wrap {
+    padding:  12rem .5rem 0;
   }
 
   .header {
