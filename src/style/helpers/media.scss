@@ -144,9 +144,12 @@
       color: #333333;
     }
     &__scroll--top {
-      position: initial;
+      position: relative;
+      right: 0;
       display: block;
       margin: 1rem auto 0;
+      animation: top 2s infinite;
+      -webkit-animation: top 2s infinite;
     }
   }
   .carousel {
