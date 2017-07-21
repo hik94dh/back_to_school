@@ -44,6 +44,16 @@
   .owl-theme .owl-dots .owl-dot.active span {
     background-color: #c2c2c2;
   }
+  .wrapper {
+    background: url(../img/bg-main-768.png) top center no-repeat;
+    background-size: contain;
+  }
+  .category__desc {
+    color: #333333;
+  }
+  .category__title {
+    color: #333333;
+  }
   .category__card--cover {
     flex-direction: row;
     width: 100%;
