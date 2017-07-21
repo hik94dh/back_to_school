@@ -201,6 +201,8 @@
       position: absolute;
       right: 13px;
       bottom: 0;
+      animation: top 2s infinite;
+      -webkit-animation: top 2s infinite;
       &:hover {
         cursor: pointer;
       }
@@ -213,4 +215,76 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@keyframes top {
+  0% {
+    bottom: 0;
+  }
+  10% {
+    bottom: 2.5px;
+  }
+  20% {
+    bottom: 5px;
+  }
+  30% {
+    bottom: 7.5px;
+  }
+  40% {
+    bottom: 10px;
+  }
+  50% {
+    bottom: 12.5px;
+  }
+  60% {
+    bottom: 10px;
+  }
+  70% {
+    bottom: 7.5px;
+  }
+  80% {
+    bottom: 5px;
+  }
+  90% {
+    bottom: 2.5px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@-webkit-keyframes top {
+  0% {
+    bottom: 0;
+  }
+  10% {
+    bottom: 2.5px;
+  }
+  20% {
+    bottom: 5px;
+  }
+  30% {
+    bottom: 7.5px;
+  }
+  40% {
+    bottom: 10px;
+  }
+  50% {
+    bottom: 12.5px;
+  }
+  60% {
+    bottom: 10px;
+  }
+  70% {
+    bottom: 7.5px;
+  }
+  80% {
+    bottom: 5px;
+  }
+  90% {
+    bottom: 2.5px;
+  }
+  100% {
+    bottom: 0;
+  }
 }
