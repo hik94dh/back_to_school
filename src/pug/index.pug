@@ -1,13 +1,14 @@
 extends ./_layout
 block vars
   -
-    var title = 'Обратно в школу';
+    var title = 'Первоклассные товары для больших открытий';
 
-    var URL = "./img/";
+    var URL = "https://fast.ulmart.ru/ns/verstka/back_to_school/img/";
 
     var ROOT = 'https://www.ulmart.ru';
 
-    var SRC = './';
+    var SRC = 'https://fast.ulmart.ru/ns/verstka/back_to_school/';
+    // var SRC = './';
 
 
 
@@ -24,9 +25,9 @@ block content
         .subheader__text--wrap
           h1.subheader__text--title  ПЕРВОКЛАССНО!
           p.subheader__text--desc  Для робких первоклашек и студентов с серьёзными диссертациями, для заспанных абитуриентов и взрослых, наконец-то решивших выучить испанский, — для каждого, кто охотится за новыми знаниями, в Юлмарте найдётся что-то очень нужное. Приготовьтесь к новому учебному сезону и большим открытиям вместе с нами!
-          .subheader__btn--wrap
-            +a({"href":`${ROOT}`, "class":"subheader__btn subheader__btn--basic"}) Мы рекомендуем
-            +a({"href":`${ROOT}`, "class":"subheader__btn subheader__btn--outline"}) Все категории
+          //- .subheader__btn--wrap
+          //-   +a({"href":`${ROOT}`, "class":"subheader__btn subheader__btn--basic"}) Мы рекомендуем
+          //-   +a({"href":`${ROOT}`, "class":"subheader__btn subheader__btn--outline"}) Все категории
     section.carousel__wrap
       .container
         h3.carousel__title Рекомендуем
@@ -63,28 +64,29 @@ block content
                 h3.category__card--title Школьная форма и обувь
                 +a({"href":`https://www.ulmart.ru/catalog/skol_naa_odezda_3`, "class":"category__card--btn"}) Выбрать форму
                 +a({"href":`https://www.ulmart.ru/catalog/skol_naa_obuv_3`, "class":"category__card--btn category__card--btn--mt"}) Выбрать обувь
-            .category__card.category__card--6
-              .category__card--border
-                h3.category__card--title Компьютеры и&nbsp;ноутбуки
-                +a({"href":`https://www.ulmart.ru/catalog/computers_notebooks`, "class":"category__card--btn"}) Выбрать товары
-            .category__card.category__card--7
-              .category__card--border
-                h3.category__card--title Смартфоны и гаджеты
-                +a({"href":`https://www.ulmart.ru//dynamic/catalog/Phones_gadgets_bts17/mobiles_gps_mp3`, "class":"category__card--btn"}) Выбрать товары
-            .category__card.category__card--8
-              .category__card--border
-                h3.category__card--title Оргтехника
-                +a({"href":`http://www.ulmart.ru/office_technics_bts17/office_tech`, "class":"category__card--btn"}) Выбрать товары
+            //- .category__card.category__card--6
+            //-   .category__card--border
+            //-     h3.category__card--title Компьютеры и&nbsp;ноутбуки
+            //-     +a({"href":`http://www.ulmart.ru/Comp_notebooks_bts17/komp_utery_i_noutbuki_1`, "class":"category__card--btn"}) Выбрать товары
+            //- .category__card.category__card--7
+            //-   .category__card--border
+            //-     h3.category__card--title Смартфоны и гаджеты
+            //-     +a({"href":`https://www.ulmart.ru//dynamic/catalog/Phones_gadgets_bts17/mobiles_gps_mp3`, "class":"category__card--btn"}) Выбрать товары
+            //- .category__card.category__card--8
+            //-   .category__card--border
+            //-     h3.category__card--title Оргтехника
+            //-     +a({"href":`http://www.ulmart.ru/office_technics_bts17/office_tech`, "class":"category__card--btn"}) Выбрать товары
             .category__card.category__card--9
               .category__card--border
                 h3.category__card--title Умные подарки
                 +a({"href":`https://www.ulmart.ru/Smart_gifts_lendingBTS/detskie_tovary_1?sort=5&viewType=0&rec=false`, "class":"category__card--btn"}) Выбрать товары
-            .category__card.category__card--10
-              .category__card--border
-                h3.category__card--title Проекторы и экраны
-                +a({"href":`https://www.ulmart.ru/catalog/proektory_i_ekrany_3`, "class":"category__card--btn"}) Выбрать товары
+            .qwe(style="width:270px") &nbsp;
+            //- .category__card.category__card--10
+            //-   .category__card--border
+            //-     h3.category__card--title Проекторы и экраны
+            //-     +a({"href":`https://www.ulmart.ru/catalog/proektory_i_ekrany_3`, "class":"category__card--btn"}) Выбрать товары
         .category__scroll--wrap
           +a({"href":`${ROOT}`, "class":"category__btn"}) Перейти к покупкам на ulmart.ru
           button.category__scroll--top
   +footer()
-      //- | Розничные цены , в&nbsp;т.&nbsp;ч. размер скидок, указаны в&nbsp;рублях с&nbsp;учётом НДС и&nbsp;действительны на&nbsp;__.__.2017.
+      | Розничные цены , в&nbsp;т.&nbsp;ч. размер скидок, указаны в&nbsp;рублях с&nbsp;учётом НДС и&nbsp;действительны с&nbsp;17.07.2017 по&nbsp;31.07.2017. Предложение действительно для зарегистрированных покупателей Юлмарта — физических лиц.

@@ -1,6 +1,6 @@
 .carousel {
   &__wrap {
-    padding-top: 12rem;
+    padding-top: 7rem;
   }
   &__title {
     color: #333;
@@ -109,21 +109,21 @@
 }
 
 .owl-theme .owl-nav .owl-prev {
-  background: transparent url(../img/ico-arrow.png) no-repeat center center;
+  background: transparent url(https://fast.ulmart.ru/ns/verstka/back_to_school/img/ico-arrow.png) no-repeat center center;
   right: 2rem;
   &:hover {
-    background: transparent url(../img/ico-arrow.png) no-repeat center center,
-                transparent url(../img/ico-nav-bg.png) no-repeat center center;
+    background: transparent url(https://fast.ulmart.ru/ns/verstka/back_to_school/img/ico-arrow.png) no-repeat center center,
+                transparent url(https://fast.ulmart.ru/ns/verstka/back_to_school/img/ico-nav-bg.png) no-repeat center center;
   }
 }
 
 .owl-theme .owl-nav .owl-next {
-  background: transparent url(../img/ico-arrow.png) no-repeat center center;
+  background: transparent url(https://fast.ulmart.ru/ns/verstka/back_to_school/img/ico-arrow.png) no-repeat center center;
   transform: rotate(180deg);
   right: -1rem;
   &:hover {
-    background: transparent url(../img/ico-arrow.png) no-repeat center center,
-                transparent url(../img/ico-nav-bg.png) no-repeat center center;
+    background: transparent url(https://fast.ulmart.ru/ns/verstka/back_to_school/img/ico-arrow.png) no-repeat center center,
+                transparent url(https://fast.ulmart.ru/ns/verstka/back_to_school/img/ico-nav-bg.png) no-repeat center center;
   }
 }
 

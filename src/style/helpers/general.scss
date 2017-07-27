@@ -67,22 +67,28 @@ a {
 
 @font-face {
   font-family: 'gilroyextrabold';
-  src: url('gilroy-extrabold-webfont.woff2') format('woff2'),
-       url('gilroy-extrabold-webfont.woff') format('woff');
+    src: url('https://fast.ulmart.ru/ns/verstka/back_to_school/fonts/gilroy-extrabold-webfont.eot');
+    src: url('https://fast.ulmart.ru/ns/verstka/back_to_school/fonts/gilroy-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://fast.ulmart.ru/ns/verstka/back_to_school/fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('https://fast.ulmart.ru/ns/verstka/back_to_school/fonts/gilroy-extrabold-webfont.woff') format('woff'),
+         url('https://fast.ulmart.ru/ns/verstka/back_to_school/fonts/gilroy-extrabold-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'gilroylight';
-  src: url('gilroy-light-webfont.woff2') format('woff2'),
-       url('gilroy-light-webfont.woff') format('woff');
+    src: url('https://fast.ulmart.ru/ns/verstka/back_to_school/fonts/gilroy-light-webfont.eot');
+    src: url('https://fast.ulmart.ru/ns/verstka/back_to_school/fonts/gilroy-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://fast.ulmart.ru/ns/verstka/back_to_school/fonts/gilroy-light-webfont.woff2') format('woff2'),
+         url('https://fast.ulmart.ru/ns/verstka/back_to_school/fonts/gilroy-light-webfont.woff') format('woff'),
+         url('https://fast.ulmart.ru/ns/verstka/back_to_school/fonts/gilroy-light-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 .wrapper {
-  background: url(../img/bg-main-2560.png) no-repeat top center;
+  background: url(https://fast.ulmart.ru/ns/verstka/back_to_school/img/bg-main-2560.png) no-repeat top center;
   padding-bottom: 4.25rem;
   width: 100%;
   margin: 0 auto;

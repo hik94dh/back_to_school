@@ -45,7 +45,7 @@
     background-color: #c2c2c2;
   }
   .wrapper {
-    background: url(../img/bg-main-768.png) top center no-repeat;
+    background: url(https://fast.ulmart.ru/ns/verstka/back_to_school/img/bg-main-768.png) top center no-repeat;
     background-size: contain;
   }
   .category__desc {
@@ -71,16 +71,19 @@
   }
 
   .carousel__wrap {
-    padding:  12rem .5rem 0;
+    padding:  7rem .5rem 0;
   }
 
   .header {
     padding: 20px 5px;
   }
+
+
   .subheader {
     &__text {
       &--wrap {
         padding: 0 .5rem;
+        background: none;
       }
     }
   }
@@ -101,7 +104,7 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
   .wrapper {
-    background: url(../img/bg-main-mobile.jpg) top center no-repeat;
+    background: url(https://fast.ulmart.ru/ns/verstka/back_to_school/img/bg-main-mobile.jpg) top center no-repeat;
     background-size: contain;
   }
   .subheader {
