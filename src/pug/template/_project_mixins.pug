@@ -123,7 +123,7 @@
 
 mixin carousel(data)
   .carousel__item
-    +a({"href":`${data.link}`})
+    +a({"href":`${data.link}`, "onclick":`pushStateToDataLayerProduct(event) ('BTS17Product', 'product', '${data.title}')`})
       img.carousel__item--img(src=`${URL + data.id + '.jpg'}`, width="188" alt="")
     p.carousel__item--desc !{(data.title)}
     .carousel__item--footer
@@ -133,7 +133,7 @@ mixin carousel(data)
         else
           .carousel__item--oldPrice !{(data.oldPrice)} руб.
         .carousel__item--price !{(data.price)} руб.
-      +a({"href":`${data.link}`, "class":"carousel__item--btn"}) Купить
+      +a({"href":`${data.link}`, "class":"carousel__item--btn", "onclick":`pushStateToDataLayerProduct(event) ('BTS17Product', 'product', '${data.title}')`}) Купить
     if data.promo !== ''
       .carousel__item--sale Скидка 
         span -!{(data.promo)}%

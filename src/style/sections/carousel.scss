@@ -1,6 +1,6 @@
 .carousel {
   &__wrap {
-    padding-top: 7rem;
+    // padding-top: 2rem;
   }
   &__title {
     color: #333;
@@ -20,7 +20,6 @@
     margin: 0 auto;
     &:hover {
       box-shadow: 0.5rem 0.813rem 1.875rem rgba(36, 36, 36, 0.45);
-      cursor: pointer;
     }
     &--img {
       height: 188px;
